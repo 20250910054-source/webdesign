@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+<circle cx="210" cy="145" r="130" fill="#315a46" opacity=".5"/>
+<circle cx="125" cy="104" r="39" fill="#e7b98f"/><circle cx="210" cy="80" r="45" fill="#f0c9a0"/><circle cx="295" cy="104" r="39" fill="#dca77e"/>
+<path d="M63 250q0-105 62-105t62 105" fill="#d5e4d6"/><path d="M133 250q0-125 77-125t77 125" fill="#f0c99e"/><path d="M233 250q0-105 62-105t62 105" fill="#a9c9b0"/>
+<path d="M105 92q20-48 43 0M181 67q30-55 59 0M274 92q20-48 43 0" fill="none" stroke="#314d3d" stroke-width="12" stroke-linecap="round"/>
+<text x="210" y="285" text-anchor="middle" font-family="Arial" font-size="12" letter-spacing="3" fill="#eaf2eb">FAMILY</text>
+</svg>
