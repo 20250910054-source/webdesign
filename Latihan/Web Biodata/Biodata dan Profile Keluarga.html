@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil Helmi Naser Bahmed dan Keluarga Besar Bahmed - Kuningan, Jawa Barat">
+    <title>Website Helmi & Profil Keluarga Bahmed</title>
+
+    <style>
+        /* ==================== GLOBAL STYLES ==================== */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        /* Navigasi / Tombol Switch Tampilan */
+        .switch-bar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #333;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn-switch {
+            background-color: #51468a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .btn-switch:hover {
+            background-color: #8c7ae6;
+        }
+
+        .btn-switch.active {
+            background-color: #dcd6f7;
+            color: #51468a;
+        }
+
+        /* Container Tampilan */
+        .page-content {
+            display: none; /* Menyembunyikan tampilan secara default */
+        }
+
+        .page-content.active {
+            display: block; /* Menampilkan tampilan yang aktif */
+        }
+
+        /* ==================== STYLES BIODATA HELMI ==================== */
+        .biodata-wrapper {
+            padding: 20px;
+        }
+
+        .biodata-container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        .biodata-header {
+            text-align: center;
+            background-color: #dcd6f7;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .biodata-foto {
+            width: 100px;
+            height: 100px;
+            background-color: #8c7ae6;
+            color: white;
+            border-radius: 50%;
+            margin: auto;
+            line-height: 100px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .biodata-container h1, 
+        .biodata-container h2 {
+            color: #51468a;
+        }
+
+        .biodata-container h2 {
+            border-bottom: 2px solid #dcd6f7;
+            padding-bottom: 5px;
+        }
+
+        .biodata-bagian {
+            margin-top: 25px;
+        }
+
+        .biodata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .biodata-table td {
+            padding: 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .biodata-table td:first-child {
+            width: 35%;
+            font-weight: bold;
+        }
+
+        .skill {
+            background-color: #dcd6f7;
+            padding: 8px 12px;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .biodata-container a {
+            color: #51468a;
+            text-decoration: none;
+        }
+
+        .biodata-container a:hover {
+            text-decoration: underline;
+        }
+
+        .biodata-footer {
+            text-align: center;
+            margin-top: 30px;
+            color: gray;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOMBOL UNTUK MENGGANTI TAMPILAN -->
+    <div class="switch-bar">
+        <button id="btn-biodata" class="btn-switch active" onclick="tampilkanBiodata()">Biodata Helmi</button>
+        <button id="btn-keluarga" class="btn-switch" onclick="tampilkanKeluarga()">Profil Keluarga Bahmed</button>
+    </div>
+
+
+    <!-- ================================================================= -->
+    <!-- TAMPILAN 1: BIODATA HELMI                                        -->
+    <!-- ================================================================= -->
+    <div id="tampilan-biodata" class="page-content active">
+        <div class="biodata-wrapper">
+            <div class="biodata-container">
+
+                <!-- Bagian Header -->
+                <div class="biodata-header">
+                    <div class="biodata-foto">H</div>
+                    <h1>Helmi Naser Bahmed</h1>
+                    <p>Mahasiswa Universitas Kuningan</p>
+                </div>
+
+                <!-- Tentang Saya -->
+                <div class="biodata-bagian">
+                    <h2>Tentang Saya</h2>
+                    <p>
+                        Perkenalkan, nama saya Helmi. Saya merupakan mahasiswa
+                        Program Studi Sistem Informasi di Universitas Kuningan.
+                        Saya memiliki ketertarikan dalam bidang teknologi,
+                        desain, dan pengembangan website.
+                    </p>
+                </div>
+
+                <!-- Data Diri -->
+                <div class="biodata-bagian">
+                    <h2>Data Diri</h2>
+
+                    <table class="biodata-table">
+                        <tr>
+                            <td>Nama</td>
+                            <td>Helmi Naser Bahmed</td>
+                        </tr>
+                        <tr>
+                            <td>Tempat, Tanggal Lahir</td>
+                            <td>Kuningan, 15 Juni 2007</td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>Laki-laki</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>Kuningan, Jawa Barat</td>
+                        </tr>
+                        <tr>
+                            <td>Program Studi</td>
+                            <td>Sistem Informasi</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Pendidikan -->
+                <div class="biodata-bagian">
+                    <h2>Riwayat Pendidikan</h2>
+
+                    <p><b>Universitas Kuningan</b></p>
+                    <p>Program Studi Sistem Informasi (2025 - Sekarang)</p>
+
+                    <p><b>SMK Prikitiw</b></p>
+                    <p>DKV - 2025</p>
+                </div>
+
+                <!-- Keahlian -->
+                <div class="biodata-bagian">
+                    <h2>Keahlian</h2>
+
+                    <span class="skill">Adobe Illustrator</span>
+                    <span class="skill">Adobe Photoshop</span>
+                    <span class="skill">CorelDRAW</span>
+                    <span class="skill">Adobe Premiere Pro</span>
+                </div>
+
+                <!-- Hobi -->
+                <div class="biodata-bagian">
+                    <h2>Hobi dan Minat</h2>
+
+                    <ul>
+                        <li>Mendesain</li>
+                        <li>Membaca</li>
+                        <li>Menjelajahi tempat baru</li>
+                        <li>Mendengar musik</li>
+                    </ul>
+                </div>
+
+                <!-- Kontak -->
+                <div class="biodata-bagian">
+                    <h2>Kontak</h2>
+
+                    <p>Email: helminaser07@gmail.com</p>
+
+                    <p>Instagram:
+                        <a href="https://instagram.com/helmi.mp3" target="_blank">
+                            @helmi.mp3
+                        </a>
+                    </p>
+
+                    <p>GitHub:
+                        <a href="https://github.com/20250910054-source" target="_blank">
+                            20250910054-source
+                        </a>
+                    </p>
+                </div>
+
+                <div class="biodata-footer">
+                    <p>© 2026 Helmi | Biodata Diri</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================================================================= -->
+    <!-- TAMPILAN 2: PROFIL KELUARGA BAHMED                                -->
+    <!-- ================================================================= -->
+    <div id="tampilan-keluarga" class="page-content" style="background-color: #FFF8E7; color: #3E2723;">
+        
+        <!-- Header -->
+        <a id="atas"></a>
+        <table width="100%" border="0" cellpadding="20" cellspacing="0" bgcolor="#6D4C41">
+          <tr>
+            <td align="center">
+              <font color="#FFF8E7" face="Georgia, serif">
+                <h1 style="color: #FFF8E7;">KELUARGA BAHMED</h1>
+                <h3><i>"Home Sweet Home"</i></h3>
+              </font>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Navigasi -->
+        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#D7B98E">
+          <tr align="center">
+            <td><b><a href="#tentang" style="color: #8D4B00;">Tentang</a></b></td>
+            <td><b><a href="#anggota" style="color: #8D4B00;">Anggota</a></b></td>
+            <td><b><a href="#silsilah" style="color: #8D4B00;">Silsilah</a></b></td>
+            <td><b><a href="#galeri" style="color: #8D4B00;">Galeri</a></b></td>
+            <td><b><a href="#kontak" style="color: #8D4B00;">Kontak</a></b></td>
+          </tr>
+        </table>
+
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+          <font color="#BF360C"><b>Selamat datang di website profil Keluarga Bahmed — Keluarga paling GHARRR </b></font>
+        </marquee>
+
+        <center>
+        <table width="85%" border="0" cellpadding="15" cellspacing="0" bgcolor="#FFFFFF">
+        <tr><td>
+
+        <!-- Tentang -->
+        <a id="tentang"></a>
+        <h2 align="center" style="color: #3E2723;"><u>Tentang Keluarga Kami</u></h2>
+        <hr size="3" color="#6D4C41" width="60%">
+
+        <p align="justify">
+          Kami adalah keluarga sederhana yang tinggal di <b>Kabupaten Kuningan, Jawa Barat</b>.
+          Dengan semangat <i>gotong royong</i>, kami saling mendukung dalam suka dan duka.
+          Halaman ini dibuat sebagai <u>perkenalan singkat</u> keluarga kami, sekaligus
+          arsip digital untuk anak cucu di masa depan.
+        </p>
+
+        <blockquote>
+          <i>"Keluarga bukan hal yang penting, melainkan segalanya."</i><br>
+          &mdash; Michael J. Fox
+        </blockquote>
+
+        <h3>Nilai-Nilai Keluarga</h3>
+        <ol>
+          <li><b>Kejujuran</b> &ndash; berkata dan berbuat apa adanya</li>
+          <li><b>Kerja keras</b> &ndash; usaha yang dibarengi doa</li>
+          <li><b>Saling menghormati</b> &ndash; yang muda menghargai yang tua</li>
+        </ol>
+
+        <hr>
+
+        <!-- Anggota -->
+        <a id="anggota"></a>
+        <h2 align="center" style="color: #3E2723;"><u>Anggota Keluarga</u></h2>
+        <hr size="3" color="#6D4C41" width="60%">
+
+        <table width="100%" border="2" cellpadding="8" cellspacing="0" bordercolor="#6D4C41">
+          <caption><b>Tabel 1. Daftar Anggota Keluarga Inti</b></caption>
+          <tr bgcolor="#6D4C41" align="center">
+            <th><font color="#FFFFFF">No</font></th>
+            <th><font color="#FFFFFF">Foto</font></th>
+            <th><font color="#FFFFFF">Nama</font></th>
+            <th><font color="#FFFFFF">Hubungan</font></th>
+            <th><font color="#FFFFFF">Tempat, Tanggal Lahir</font></th>
+            <th><font color="#FFFFFF">Pekerjaan / Kegiatan</font></th>
+            <th><font color="#FFFFFF">Hobi</font></th>
+          </tr>
+          <tr bgcolor="#FFF3E0">
+            <td align="center">1</td>
+            <td align="center"><img src="WhatsApp Image 2026-10-23 at 5.53.18 AM.jpeg" alt="Foto Ayah" width="80" height="80"></td>
+            <td><b>Naser Bahmed</b></td>
+            <td>Ayah / Kepala Keluarga</td>
+            <td>Kuningan, 19 Mei 1968</td>
+            <td>Wiraswasta</td>
+            <td>Memancing</td>
+          </tr>
+          <tr bgcolor="#FFFFFF">
+            <td align="center">2</td>
+            <td align="center"><img src="WhatsApp Image 2026-10-23 at 6.13.51 AM.jpeg" alt="Foto Ibu" width="80" height="80"></td>
+            <td><b>Jamilah</b></td>
+            <td>Ibu</td>
+            <td>Cirebon, 11 November 1977</td>
+            <td>Ibu Rumah Tangga</td>
+            <td>Memasak, merajut</td>
+          </tr>
+          <tr bgcolor="#FFF3E0">
+            <td align="center">3</td>
+            <td align="center"><img src="WhatsApp Image 2026-10-23 at 6.29.31 AM.jpegg.jpg" alt="Foto Anak Pertama" width="80" height="80"></td>
+            <td><b>Ahmad Naser Bahmed</b></td>
+            <td>Anak Pertama</td>
+            <td>Riyadh, 6 Mei 1989</td>
+            <td>Wiraswasta</td>
+            <td>Mancing</td>
+          </tr>
+          <tr bgcolor="#FFFFFF">
+            <td align="center">4</td>
+            <td align="center"><img src="WhatsApp Image 2026-10-23 at 6.12.08 AM.jpeg" alt="Foto Anak Kedua" width="80" height="80"></td>
+            <td><b>Wardah Naser</b></td>
+            <td>Anak Kedua</td>
+            <td>Tangerang, 9 Oktober 1990</td>
+            <td>Ibu Rumah Tangga</td>
+            <td>Membaca</td>
+          </tr>
+          <tr bgcolor="#FFF3E0">
+            <td align="center">5</td>
+            <td align="center"><img src="WhatsApp Image 2026-10-23 at 6.28.25 AM.jpeg" alt="Foto Anak Ketiga" width="80" height="80"></td>
+            <td><b>Wafa Fauziah</b></td>
+            <td>Anak Ketiga</td>
+            <td>Tangerang, 21 Juni 2001</td>
+            <td>Ibu Rumah Tangga</td>
+            <td>Berkebun</td>
+          </tr>  
+          <tr bgcolor="#FFFFFF">
+            <td align="center">6</td>
+            <td align="center"><img src="WhatsApp Image 2026-10-22 at 10.40.05 PM.jpeg" alt="Foto Anak Keempat" width="80" height="80"></td>
+            <td><b>Helmi Naser Bahmed</b></td>
+            <td>Anak Keempat</td>
+            <td>Kuningan, 15 Juni 2007</td>
+            <td>Mahasiswa</td>
+            <td>Mendengar musik, Designing</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <h3>Profil Singkat Masing-Masing</h3>
+        <dl>
+          <dt><b>Naser Bahmed (Ayah)</b></dt>
+          <dd>Tulang punggung keluarga yang tak pernah mengeluh. Akhir pekan dihabiskan di kebun belakang rumah.</dd>
+          <br>
+          <dt><b>Jamilah (Ibu)</b></dt>
+          <dd>Koki andalan keluarga. Sambal buatannya selalu dirindukan saat anak-anak merantau.</dd>
+          <br>
+          <dt><b>Ahmad Naser Bahmed (Anak Pertama)</b></dt>
+          <dd>Anak Pertama yang memiliki usaha berniaga.</dd>
+          <br>
+          <dt><b>Wardah Bahmed (Anak Kedua)</b></dt>
+          <dd>Anak kedua yang sudah memiliki dua anak juga.</dd>
+          <br>
+          <dt><b>Wafa Fauziah (Anak Ketiga)</b></dt>
+          <dd>Seorang ibu rumah tangga yang sudah hidup jauh di Bogor.</dd>
+          <br>
+          <dt><b>Helmi Naser Bahmed (Anak Keempat a.k.a bungsu)</b></dt>
+          <dd>Si bungsu yang kreatif dan ceria, sering mendengar musik dan mendesain.</dd>
+        </dl>
+
+        <hr>
+
+        <!-- Silsilah -->
+        <a id="silsilah"></a>
+        <h2 align="center" style="color: #3E2723;"><u>Silsilah Keluarga</u></h2>
+        <hr size="3" color="#6D4C41" width="60%">
+
+        <table width="100%" border="1" cellpadding="10" cellspacing="0" bgcolor="#F1F8E9">
+          <!-- Generasi I -->
+          <tr align="center" bgcolor="#C5E1A5">
+            <td colspan="4"><b>Generasi I - Kakek &amp; Nenek</b></td>
+          </tr>
+          <tr align="center">
+            <td colspan="2">
+              <b>H. Abdul</b><br>(Kakek dari Ayah)<br>&amp;<br>Hj. Siti
+            </td>
+            <td colspan="2">
+              <b>H. Raksakersa</b><br>(Kakek dari Ibu)<br>&amp;<br>Hj. Timu
+            </td>
+          </tr>
+
+          <!-- Generasi II -->
+          <tr align="center" bgcolor="#C5E1A5">
+            <td colspan="4"><b>Generasi II - Orang Tua</b></td>
+          </tr>
+          <tr align="center">
+            <td colspan="4">
+              <b>Naser Bahmed</b> &nbsp;❤️&nbsp; <b>Jamilah</b>
+            </td>
+          </tr>
+
+          <!-- Generasi III -->
+          <tr align="center" bgcolor="#C5E1A5">
+            <td colspan="4"><b>Generasi III - Anak</b></td>
+          </tr>
+          <tr align="center">
+            <td>Ahmad Naser</td>
+            <td>Wardah Bahmed</td>
+            <td>Wafa Fauziah</td>
+            <td>Helmi Naser</td>
+          </tr>
+        </table>
+        
+        <hr>
+
+        <!-- Galeri -->
+        <a id="galeri"></a>
+        <h2 align="center" style="color: #3E2723;"><u>Galeri Kenangan</u></h2>
+        <hr size="3" color="#6D4C41" width="60%">
+
+        <p align="center"><i>Ini adalah galeri keluarga Bahmed</i></p>
+
+        <table width="100%" border="0" cellpadding="10" cellspacing="0" align="center">
+          <tr align="center">
+            <td>
+              <img src="WhatsApp Image 2026-10-22 at 10.19.05 PM.jpeg" alt="Foto Keluarga" width="260" height="180" border="3"><br>
+              <small><b>Full member gilakkk</b></small>
+            </td>
+            <td>
+              <img src="WhatsApp Image 2026-10-22 at 10.18.36 PM.jpeg" alt="my sister wedding" width="260" height="180" border="3"><br>
+              <small><b>at my sister wedding</b></small>
+            </td>
+            <td>
+              <img src="IMG_20260129_185440_843.jpg" alt="first lomba" width="260" height="180" border="3"><br>
+              <small><b>lomba pantomim (tapi kalah)</b></small>
+            </td>
+          </tr>
+        </table>
+
+        <hr>
+        <h3>Impian Bersama</h3>
+        <ul>
+          <li>✅ Membuka usaha keluarga</li>
+          <li>⬜ Berangkat umrah bersama</li>
+          <li>⬜ Menyekolahkan anak hingga sarjana</li>
+        </ul>
+
+        </td></tr>
+        </table>
+        </center>
+
+        <br>
+        <!-- Footer Keluarga -->
+        <table width="100%" border="0" cellpadding="15" cellspacing="0" bgcolor="#6D4C41">
+          <tr>
+            <td align="center">
+              <font color="#FFF8E7">
+                <a href="#atas"><font color="#FFCC80">⬆ Kembali ke atas</font></a>
+                <hr width="40%">
+                <small>&copy; 2026 Keluarga Besar Bahmed.</small>
+              </font>
+            </td>
+          </tr>
+        </table>
+
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- JAVASCRIPT UNTUK SWITCH TAMPILAN                                  -->
+    <!-- ================================================================= -->
+    <script>
+        function tampilkanBiodata() {
+            document.getElementById('tampilan-biodata').classList.add('active');
+            document.getElementById('tampilan-keluarga').classList.remove('active');
+            
+            document.getElementById('btn-biodata').classList.add('active');
+            document.getElementById('btn-keluarga').classList.remove('active');
+        }
+
+        function tampilkanKeluarga() {
+            document.getElementById('tampilan-keluarga').classList.add('active');
+            document.getElementById('tampilan-biodata').classList.remove('active');
+            
+            document.getElementById('btn-keluarga').classList.add('active');
+            document.getElementById('btn-biodata').classList.remove('active');
+        }
+    </script>
+
+</body>
+</html>
